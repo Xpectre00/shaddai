@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-obsidian text-white font-sans antialiased;
+  }
+}
+
+@layer components {
+  .text-metallic {
+    background: linear-gradient(135deg, #c0c0c0 0%, #e6e6e6 50%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-metallic-dark {
+    background: linear-gradient(135deg, #888 0%, #c0c0c0 50%, #999 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-metallic {
+    border-image: linear-gradient(135deg, #c0c0c0 0%, #e6e6e6 50%, #a0a0a0 100%) 1;
+  }
+
+  .bg-metallic {
+    background: linear-gradient(135deg, #c0c0c0 0%, #e6e6e6 50%, #a0a0a0 100%);
+  }
+
+  .shadow-brand {
+    box-shadow: 0 4px 30px rgba(139, 0, 0, 0.4), 0 0 60px rgba(139, 0, 0, 0.1);
+  }
+
+  .shadow-silver {
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.15), 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-whatsapp {
+    @apply relative overflow-hidden font-semibold transition-all duration-300 ease-out;
+  }
+
+  .btn-whatsapp::after {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%);
+  }
+
+  .btn-whatsapp:hover::after {
+    @apply opacity-100;
+  }
+
+  .btn-whatsapp:active {
+    @apply scale-95;
+  }
+}
+
+@layer utilities {
+  .text-shadow-brand {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5), 0 0 20px rgba(139,0,0,0.3);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(192, 192, 192, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(192, 192, 192, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
