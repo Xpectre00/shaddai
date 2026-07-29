@@ -23,12 +23,15 @@ export default function Hero() {
           <svg className="w-4 h-4 text-silver/60" viewBox="0 0 20 20" fill="currentColor">
             <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
           </svg>
+          <svg className="w-4 h-4 text-silver/60" viewBox="0 0 20 20" fill="currentColor">
+            <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
+          </svg>
           <svg className="w-4 h-4 text-silver/40" viewBox="0 0 20 20" fill="currentColor">
             <polygon points="10,0 13,7 20,7 14,12 16,20 10,15 4,20 6,12 0,7 7,7" />
           </svg>
         </div>
 
-        <h1 className="font-display text-6xl md:text-7xl lg:text-8xl tracking-[0.15em] text-metallic drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] leading-none mb-2">
+        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl tracking-[0.15em] text-metallic drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] leading-none mb-2">
           SHADDAI
         </h1>
 
